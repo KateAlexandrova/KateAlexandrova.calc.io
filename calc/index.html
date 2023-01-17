@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Простой калькулятор</h1>
+    <div class="wrapper">
+      <div class="instruction">
+        <div class="step">
+          <span>1. Введите первое число</span>
+          <div class="image"></div>
+        </div>
+        <div class="step">
+          <span>2. Выберите действие</span>
+          <div class="image"></div>
+        </div>
+        <div class="step">
+          <span>3. Введите второе число</span>
+          <div class="image"></div>
+        </div>
+        <div class="step">
+          <span>4. Нажмите для расчета</span>
+          <div class="image"></div>
+        </div>
+        <div class="step">
+          <span>5. Получите ответ</span>
+          <div class="image"></div>
+        </div>
+      </div>
+      <div class="calc">
+        <input id="num1" maxlength="30" minlength="1" />
+        <div class="operation" id="buttons__operator">
+          <button onclick="operation='+'">+</button>
+          <button onclick="operation='-'">-</button>
+          <button onclick="operation='*'">x</button>
+          <button onclick="operation='/'">:</button>
+        </div>
+        <input id="num2" maxlength="30" minlength="1" />
+        <button id="btn">=</button>
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
